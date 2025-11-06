@@ -6,10 +6,17 @@ This project demonstrates a serverless architecture where microservices are depl
 ![Project Design](https://github.com/PrajaktaMane11/AWS_Serverless_Microservices_Project/blob/main/Project%20Design.svg)
 #
 
-### Serverless Microservices
+### Concept of Serverless Microservices
 
 Microservices: Small, independent services that each handle a specific piece of functionality.
-
 Serverless: You write and deploy code without provisioning or managing servers. AWS automatically handles scaling, availability, and fault tolerance.
-
 When combined, you get modular, scalable applications that are cheaper and easier to maintain.
+
+#
+### Core AWS Services Used
+
+| Function    | AWS Service       | Description |
+| :---:       |     :---:        |   :---:     |
+|Compute      |AWS Lambda         |Event-driven compute service and allows users to run code without provisioning or managing servers|
+|API Gateway  |Amazon API Gateway |Service for creating, publishing, maintaining, monitoring, and securing REST, HTTP, and WebSocket APIs at any scale|
+|Data Storage |Amazon DynamoDB    |NoSQL database for scalable and fast , predictable performance storage
