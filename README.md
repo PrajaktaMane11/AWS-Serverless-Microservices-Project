@@ -52,13 +52,13 @@ Click Available Applications, type “power” and click checkbox “Show apps t
 Select aws-lambda-power-tuning
 Scroll down, keep everything as it is, click checkbox “I acknowledge that this app creates custom IAM roles”
 Click “Deploy” -> This will create:
-  i. Step Function
-  ii. IAM role for execution
+i. Step Function
+ii. IAM role for execution
 
 Step 2: Configure a Run
-  i. Open Step Functions in AWS Console.
-  ii. Click “Start execution” on the Lambda Power Tuning state machine.
-  iii. Provide JSON input:
+i. Open Step Functions in AWS Console.
+ii. Click “Start execution” on the Lambda Power Tuning state machine.
+iii. Provide JSON input:
 
 ```
 {
