@@ -43,23 +43,22 @@ It then outputs a visualization showing:
 3. Best balance (Speed vs Cost)
 
 ### Steps to Use AWS Lambda Power Tuning
-Step 1: Deploy the Power Tuning Step Function
+**Step 1: Deploy the Power Tuning Step Function**
 AWS has a pre-built Step Function:
 Go to Serverless Application Repository -> Click Available Applications
   type “power” and click checkbox “Show apps that create custom IAM roles or resource policies”
 
 ![AWS Lambda Power Tuning](images/aws-lambda-power-tuning.jpg)
 
-Select aws-lambda-power-tuning
-Scroll down, keep everything as it is, click checkbox “I acknowledge that this app creates custom IAM roles”
-
-Click “Deploy” -> This will create:
+Select "aws-lambda-power-tuning"
+Scroll down, keep everything as it is, click checkbox "I acknowledge that this app creates custom IAM roles"
+Click "Deploy" -> This will create:
 i. Step Function
 ii. IAM role for execution
 
-Step 2: Configure a Run
+**Step 2: Configure a Run**
 i. Open Step Functions in AWS Console.
-ii. Click “Start execution” on the Lambda Power Tuning state machine.
+ii. Click "Start execution" on the Lambda Power Tuning state machine.
 iii. Provide JSON input:
 
 ```
@@ -76,12 +75,11 @@ iii. Provide JSON input:
 }
 
 ```
-Step 3: Run and Monitor
+**Step 3: Run and Monitor**
 The Step Function will invoke your Lambda N times at each memory setting.
 It collects:  Duration, Cost per invocation, Failures (if any)
 
-##Performance Analysis and Results
-Step 4:Graphical Visualization
+**Step 4:Graphical Visualization**
 i. X-axis: Memory (MB)
 ii. Y-axis: Cost / Duration
 
@@ -89,10 +87,11 @@ From the graph, able to pick Cheapest -> minimal cost or Fastest -> minimal dura
 
 ![Lamda Power Tuning ](images/aws-lambda-power-tuning-result.jpg)
 
-Step 5: Applied the Optimal Memory Setting for Lambda Function
+**Step 5: Applied the Optimal Memory Setting for Lambda Function**
 ![Lambda Fubction Memory Setting](images/lambda-function-memory-setting.jpg)
 #
 
-Performance Metrics on simulation of concurrent users and requests using Postman’s Collection Runner
+### Performance Metrics on simulation of concurrent users and requests using Postman’s Collection Runner 
+##Performance Analysis and Results
 
 
