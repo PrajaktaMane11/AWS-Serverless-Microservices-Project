@@ -44,15 +44,16 @@ It then outputs a visualization showing:
 
 ### Steps to Use AWS Lambda Power Tuning
 **Step 1: Deploy the Power Tuning Step Function**
-
 AWS has a pre-built Step Function:
 Go to Serverless Application Repository -> Click Available Applications
-type “power” and click checkbox “Show apps that create custom IAM roles or resource policies”
+type “power” and 
+Click checkbox “Show apps that create custom IAM roles or resource policies”
 
 ![AWS Lambda Power Tuning](images/aws-lambda-power-tuning.jpg)
 
 Select "aws-lambda-power-tuning"
-Scroll down, keep everything as it is, click checkbox "I acknowledge that this app creates custom IAM roles"
+Scroll down, keep everything as it is
+Click checkbox "I acknowledge that this app creates custom IAM roles"
 Click "Deploy" -> This will create:
 * Step Function
 * IAM role for execution
@@ -84,9 +85,9 @@ It collects:  Duration, Cost per invocation, Failures (if any)
 * X-axis: Memory (MB)
 * Y-axis: Cost / Duration
 
-From the graph, able to pick Cheapest -> minimal cost or Fastest -> minimal duration on derived result can get best balanced -> reasonable cost + speed
-
 ![Lamda Power Tuning ](images/aws-lambda-power-tuning-result.jpg)
+
+From the graph, able to pick Cheapest -> minimal cost or Fastest -> minimal duration on derived result can get best balanced -> reasonable cost + speed
 
 **Step 5: Applied the Optimal Memory Setting for Lambda Function**
 ![Lambda Fubction Memory Setting](images/lambda-function-memory-setting.jpg)
