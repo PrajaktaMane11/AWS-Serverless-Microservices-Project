@@ -3,7 +3,7 @@ This project demonstrates a serverless architecture where microservices are depl
 #
 ### Project Design
 
-![Project Design](images/Project Design.svg)
+![Project Design](images/project-design.svg)
 #
 
 ### Concept of Serverless Microservices
