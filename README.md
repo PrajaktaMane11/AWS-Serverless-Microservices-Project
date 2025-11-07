@@ -3,7 +3,7 @@ This project demonstrates a serverless architecture where microservices are depl
 #
 ### Project Design
 
-![Project Design](images/project-design.svg)
+![Project Design](images/project_design.svg)
 #
 
 ### Concept of Serverless Microservices
@@ -91,14 +91,15 @@ It collects:  Duration, Cost per invocation, Failures (if any)
 From the graph, able to pick Cheapest -> minimal cost or Fastest -> minimal duration on derived result can get best balanced -> reasonable cost + speed
 
 **Step 5: Applied the Optimal Memory Setting for Lambda Function**
+
 ![Lambda Fubction Memory Setting](images/lambda-function-memory-setting.jpg)
 #
 
 ### Performance Metrics on simulation of concurrent users and requests using Postman’s Collection Runner 
 
-| Memory (MB) | 128 | 1024 |
+| Memory(MB) | 128 | 1024 |
 | ---      | :---:       | :---:       |
-| **Avg Duration (ms)** | **618**| **359** |
+| **Avg Duration(ms)** | **618**| **359** |
 |**Performance Test Report**|![lamda-API-Gateway-performance-report-1](images/lamda-API-Gateway-performance-report-1.jpg) |![lamda-API-Gateway-performance-report-2](images/lamda-API-gateway-performance-report-2.jpg) |
 
 #
