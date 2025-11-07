@@ -1,0 +1,6 @@
+{
+"operation": "list",
+"tableName": "your_dynamoDB_tableName",
+"payload": {
+}
+}
